@@ -1,8 +1,10 @@
 package com.training;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class EightQueensTest {
     EightQueens eightQueens;
@@ -14,6 +16,6 @@ public class EightQueensTest {
 
     @Test
     public void test() {
-        Assert.assertEquals(eightQueens.printMessage(), "Hello");
+        eightQueens.solve();
     }
 }
