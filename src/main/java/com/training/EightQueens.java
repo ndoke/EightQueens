@@ -3,7 +3,7 @@ package com.training;
 import java.util.ArrayList;
 
 public class EightQueens {
-    public static final int BOARD_SIZE = 8;
+    private static final int BOARD_SIZE = 8;
 
     public void solve() {
         ArrayList<Integer[]> results = solve(0, new Integer[BOARD_SIZE], new ArrayList<>());
@@ -21,7 +21,7 @@ public class EightQueens {
         System.out.println(sb.toString());
     }
 
-    public ArrayList<Integer[]> solve(int row, Integer[] columns, ArrayList<Integer[]> results) {
+    private ArrayList<Integer[]> solve(int row, Integer[] columns, ArrayList<Integer[]> results) {
         if (row == BOARD_SIZE) {
             results.add(columns.clone());
         }
